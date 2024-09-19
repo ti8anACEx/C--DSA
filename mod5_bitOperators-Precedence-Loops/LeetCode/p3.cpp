@@ -12,13 +12,13 @@ int main(){
 
     while(n!=0) {
         int digit = n%10;
-        if(temp == 0) {
-            temp = digit;
-            n = n/10;
-            continue;
+        n = n/10;
+
+        if(temp >= INT32_MAX/10 || temp <= INT32_MIN/10) {
+             cout << endl <<"The reversed digit is " << 0 << endl;
+            return 0;
         }
         temp = temp*10 + digit;
-        n = n/10;
     }
 
     cout << endl <<"The reversed digit is " << temp << endl;
