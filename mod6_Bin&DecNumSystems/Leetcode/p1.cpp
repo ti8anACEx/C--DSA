@@ -23,3 +23,24 @@ int main() {
     cout << "NOoe" << endl;
     return 0;
 }
+
+// ANOTHER BUT BEST WAY!
+
+// check if the number of set bits = 1 (ie total number of 1 bits in a binary number is 1)
+// then only, the number is a perfect square!
+// eg, 8, a perfect square has only one set bit '1'000
+
+// main(){
+    // if (one_bits(512)==1){
+    //     cout<<"The number is a perfect square!";
+    // }
+// }
+
+int one_bits(int x){
+    int ones = 0;
+    while (x!=0){
+        if (x&1) ones++;
+        x =  x >> 1; 
+    }
+    return ones;
+}
