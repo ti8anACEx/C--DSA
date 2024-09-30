@@ -13,7 +13,7 @@ void printArrayByValue(int arr[], int length){
 
 
 // passByReference. Both refernece ways can modify the actual array
-void printArrayByRef(int *arr, int length){
+void printArrayByRef(int *arr, int length){ // as int *arr is the parameter, we can use arr[i] or *(arr+i) to access elements
     cout<<endl<<"The array is:"<<endl;
 
     for (int i=0; i<length; i++){
