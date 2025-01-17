@@ -1,0 +1,9 @@
+| Aspect         | Maps                         | Multimaps                     | Unordered Maps                |
+|----------------|------------------------------|-------------------------------|-------------------------------|
+| Definition     | Associative container        | Associative container         | Associative container         |
+| Structure      | Key-value pairs              | Key-value pairs               | Key-value pairs               |
+| Key Uniqueness | Keys must be unique          | Keys can have multiple values | Keys must be unique           |
+| Sorting        | Sorted by keys (in `std::map`)| Sorted by keys                | No inherent sorting (hash)    |
+| Implementation | Balanced binary search tree  | Balanced binary search tree   | Hash table                    |
+| Complexity     | Logarithmic for operations   | Logarithmic for operations    | Average constant for operations|
+| Use Case       | Dictionaries, caches         | Multimap (phonebook, index)   | Fast lookup, caching          |
